@@ -21,4 +21,4 @@ Other historical single core architectures:
 </ul>
 
 
-These processors have multi-core, so one core can you run the mixer, the other core can you run the decimator and other can you run the next signal processing functions (demodulator, ...).
+These processors (except historical architectures) have multi-core, so one core can you run the mixer, the other core can you run the decimator and other can you run the next signal processing functions (demodulator, ...).
