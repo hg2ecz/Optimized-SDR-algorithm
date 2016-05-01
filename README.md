@@ -1,7 +1,7 @@
 # Optimized-SDR-algorithm
 Software Defined Radio algorithm - Optimized for ARM processor
 
-I interested for wide band SDR, and the first problem: what sample speed enough the resources?
+I interested for wide band SDR, and the first problem: what sample speed enough the resources?<br>
 The first block of wide band SDR: mixer with internal oscillator (sdr-mixer/) and the decimator with low pass filter (sdr-decimator/).
 
 The next block work with output data of decimator, also fewer data, fewer resources.
@@ -9,10 +9,13 @@ The next block work with output data of decimator, also fewer data, fewer resour
 I tested the algorythm (mixer+osc  and decimator) in one core. The results:
 
 <ul>
-<li>Odroid-C1 : 1,5 GHz ARM Cortex A5 : 50 Msps and 35 Msps</li>
-<li>Raspberry3: 1,2 GHz ARM Cortex A53: 48 Msps and 52 Msps (32 bit Linux)</li>
-<li>3,4 GHz i7-2600: 380 Msps and 370 Msps</li>
+<li>Odroid-U3 : 1,7 GHz ARM Cortex A9 : 75 Msps and 50 Msps per core</li>
+<li>Odroid-C1 : 1,5 GHz ARM Cortex A5 : 50 Msps and 35 Msps per core</li>
+<li>Raspberry3: 1,2 GHz ARM Cortex A53: 48 Msps and 52 Msps per core(32 bit Linux)</li>
+<li>3,4 GHz i7-2600: 380 Msps and 370 Msps per core</li>
 </ul>
+
+My experience: -mcpu=cortex-a5 -mfpu=neon-fp16 given better result for Cortex A5 and also Cortex A9, A53. Why?
 
 Other historical single core architectures:
 <ul>
