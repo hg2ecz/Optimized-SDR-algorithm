@@ -11,16 +11,17 @@ I tested the algorythm (mixer+osc  and decimator) in one core. The results:
 <ul>
 <li>Odroid-U3 : 1,7 GHz ARM Cortex A9 : 75 Msps and 50 Msps per core</li>
 <li>Odroid-C1 : 1,5 GHz ARM Cortex A5 : 50 Msps and 35 Msps per core</li>
-<li>Raspberry3: 1,2 GHz ARM Cortex A53: 48 Msps and 52 Msps per core(32 bit Linux)</li>
+<li>Raspberry2: 0,9 GHz ARM Cortex A53: 29 Msps and 25 Msps per core</li>
+<li>Raspberry3: 1,2 GHz ARM Cortex A53: 48 Msps and 52 Msps per core (32 bit Linux)</li>
 <li>3,4 GHz i7-2600: 380 Msps and 370 Msps per core</li>
 </ul>
 
-My experience: -mcpu=cortex-a5 -mfpu=neon-fp16 given better result for Cortex A5 and also Cortex A9, A53. Why?
+My experience: -mcpu=cortex-a5 -mfpu=neon-fp16 given better result for Cortex A5 and also Cortex A7, A9, A53. Why?
 
 Other historical single core architectures:
 <ul>
 <li>2,8 GHz Pentium4: 95 Msps and 61 Msps</li>
-<li>0,7 GHz Raspberry Pi1: 11,7 Msps and 11,6 Msps (32 bit Linux)</li>
+<li>0,7 GHz Raspberry Pi1: 11,7 Msps and 11,6 Msps</li>
 </ul>
 
 
