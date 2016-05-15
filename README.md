@@ -11,7 +11,7 @@ I tested the algorythm (mixer+osc  and decimator) in one core. The results:
 <ul>
 <li>Odroid-U3 : 1,7 GHz ARM Cortex A9 : 75 Msps and 50 Msps per core</li>
 <li>Odroid-C1 : 1,5 GHz ARM Cortex A5 : 50 Msps and 35 Msps per core</li>
-<li>Raspberry2: 0,9 GHz ARM Cortex A53: 29 Msps and 25 Msps per core</li>
+<li>Raspberry2: 0,9 GHz ARM Cortex A7 : 29 Msps and 25 Msps per core</li>
 <li>Raspberry3: 1,2 GHz ARM Cortex A53: 48 Msps and 52 Msps per core (32 bit Linux)</li>
 <li>3,4 GHz i7-2600: 380 Msps and 370 Msps per core</li>
 </ul>
